@@ -443,6 +443,14 @@ public class OnlineTicTacToe extends AppCompatActivity implements View.OnClickLi
 
 
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        getSharedPreferences(GAME_REQUEST,MODE_PRIVATE).edit().clear().commit();
+        finishAffinity();
+    }
+
     public void disableScreen()
     {
         dialog.show();
