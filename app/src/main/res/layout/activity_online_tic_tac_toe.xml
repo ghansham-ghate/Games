@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:id="@+id/gameArea"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/undoPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/row1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Undo"
+        android:visibility="invisible" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/row1"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/o1"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/plain"></Button>
+
+            <Button
+                android:id="@+id/o2"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/plain"></Button>
+
+            <Button
+                android:id="@+id/o3"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/plain"></Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/o4"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/plain"></Button>
+
+            <Button
+                android:id="@+id/o5"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/plain"></Button>
+
+            <Button
+                android:id="@+id/o6"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/plain"></Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/o7"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/plain"></Button>
+
+            <Button
+                android:id="@+id/o8"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/plain"></Button>
+
+            <Button
+                android:id="@+id/o9"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/plain"></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

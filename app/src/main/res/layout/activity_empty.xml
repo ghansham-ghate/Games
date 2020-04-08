@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EmptyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#ff2d9a59"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:onClick="onlineMode"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif"
+            android:text="Play online with friends"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:fontFamily="sans-serif"
+            android:id="@+id/offlineGo"
+            android:onClick="goToOfflineActivity"
+            android:layout_margin="10dp"
+            android:background="#ff2d9a59"
+            android:text="Play offline"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

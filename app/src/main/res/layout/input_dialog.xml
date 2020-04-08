@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:card_view="http://schemas.android.com/apk/res-auto"
+android:id="@+id/scene_card_view"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginLeft="2dp"
+android:layout_marginTop="2dp"
+android:layout_marginRight="2dp"
+android:alpha="0.8"
+
+card_view:cardElevation="6dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/average_sansa"
+        android:layout_margin="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:text="Creating Profile"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/device_status"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/average_sansa"
+        android:paddingLeft="5dp"
+        android:layout_margin="5dp"
+        android:paddingTop="10dp"
+        android:text="Enter Phone Number"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/average_sansa"
+        android:background="@drawable/edittext_border"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/white" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/ok"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="OK"
+            android:inputType="phone"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
